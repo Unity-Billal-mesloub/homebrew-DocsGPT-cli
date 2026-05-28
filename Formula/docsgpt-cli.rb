@@ -10,10 +10,10 @@ class DocsgptCli < Formula
 
   def install
     ldflags = "-s -w -X docsgpt-cli/cmd.Version=#{version}"
-    system "go", "build", *std_go_args, "-o", bin/"docsgpt-cli"
+    system "go", "build", *std_go_args(ldflags: ldflags)
   end
 
   test do
-    assert_match "DocsGPT-cli version", shell_output("#{bin}/docsgpt-cli --version")
+    assert_match "DocsGPT-cli version #{version}", shell_output("#{bin}/docsgpt-cli --version")
   end
 end
