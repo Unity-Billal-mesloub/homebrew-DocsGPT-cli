@@ -9,6 +9,7 @@ class DocsgptCli < Formula
   depends_on "go" => :build
 
   def install
+    ldflags = "-s -w -X docsgpt-cli/cmd.Version=#{version}"
     system "go", "build", *std_go_args, "-o", bin/"docsgpt-cli"
   end
 
