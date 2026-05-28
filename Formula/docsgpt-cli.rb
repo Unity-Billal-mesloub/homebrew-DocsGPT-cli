@@ -1,9 +1,9 @@
 class DocsgptCli < Formula
   desc "A CLI tool for DocsGPT"
   homepage "https://github.com/arc53/DocsGPT-cli"
-  url "https://github.com/arc53/DocsGPT-cli/archive/refs/tags/v1.1.1.tar.gz"
-  sha256 "435e4e571d43fa8ddcd13e4824cc01afe05eac807892f8ce4bfd7a562dc93e0d"
-  version "1.1.1"
+  url "https://github.com/arc53/DocsGPT-cli/archive/refs/tags/v1.1.2.tar.gz"
+  sha256 "8ad2283aa463e58cf3b22482d7986853340ee2021928bdce7dd41f1aca82ff69"
+  version "1.1.2"
   license "MIT"
 
   depends_on "go" => :build
