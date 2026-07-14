@@ -1,9 +1,8 @@
 class DocsgptCli < Formula
   desc "A CLI tool for DocsGPT"
   homepage "https://github.com/arc53/DocsGPT-cli"
-  url "https://github.com/arc53/DocsGPT-cli/archive/refs/tags/v1.1.2.tar.gz"
-  sha256 "8ad2283aa463e58cf3b22482d7986853340ee2021928bdce7dd41f1aca82ff69"
-  version "1.1.2"
+  url "https://github.com/arc53/DocsGPT-cli/archive/refs/tags/v1.3.0.tar.gz"
+  sha256 "5549a302e2e98c6c89b4275f29af4e7047a9a2074bb1b6a591df8cd97a06fbb8"
   license "MIT"
 
   depends_on "go" => :build
@@ -14,6 +13,6 @@ class DocsgptCli < Formula
   end
 
   test do
-    assert_match "DocsGPT-cli version #{version}", shell_output("#{bin}/docsgpt-cli --version")
+    assert_match "docsgpt-cli version #{version}", shell_output("#{bin}/docsgpt-cli --version")
   end
 end
